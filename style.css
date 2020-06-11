@@ -3,7 +3,11 @@
 :root{
   --font-primary: "Roboto", sans-serif;
   --spacing: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0,0,0 0.1);
+  --light-shadow: 10px 2px 15px rgba(0,0,0 0.6);
+  --nav-white: #fff;
+  --black: #222;
+  --light-green: hsl(125,71%,66%);
+  --dark-red: hsl(360,67%,44%);
 }
 
 *,
@@ -34,4 +38,44 @@ h1,h2,h3,h4 {
   font-family: var(--font-primary);
 }
 
-
+@media screen and (min-width: 500px){
+  
+  nav{
+    background: var(--nav-white);
+    width: 10rem;
+    height:
+    box-shadow: var(--light-shadow);
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    position: relalive;
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
+  
+  nav a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--dark-red);
+    
+  }
+  
+  nav a:hover{
+    color: coral;
+  }
+  
+  main{
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+    position: relative;
+    left: 200px;
+  }
+  
+  
+  
+  
+  
+}
